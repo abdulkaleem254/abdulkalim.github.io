@@ -281,6 +281,18 @@ input:hover{
 
 
 		}
+		/*skilss*/
+		.clb,.html,.css,.pyt,.j{
+			width: 80%;
+			margin-left: 0%;
+			margin-top: 5%;
+			height: 20%;
+		}
+		meter{
+    		height: 1em;
+    		width: 90%;
+
+		}
 
 
 }
