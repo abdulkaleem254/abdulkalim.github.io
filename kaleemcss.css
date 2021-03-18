@@ -243,13 +243,13 @@ input:hover{
 		}
 		.imgg img{
 			border: 1px solid white;
-			margin-top: -110%;
-			margin-right: 10%;
-			width: 25%;
+			margin-top: -90%;
+			margin-right: 5%;
+			width: 35%;
 
 		}
 		.imgg img:hover{
-			width: 25%;
+			width: 33%;
 		}
 		.list li button{
 			margin-left: 5%;
