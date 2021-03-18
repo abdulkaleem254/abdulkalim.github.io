@@ -195,7 +195,7 @@ input:hover{
 	height: 2%;
 	transition: 0.5s;
 }
-@media screen and (max-width: 420px)
+@media screen and (max-width: 500px)
 {
 
 	#menu {width:100%;
