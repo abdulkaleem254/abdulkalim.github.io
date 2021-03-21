@@ -22,14 +22,6 @@
 			background-color: black;
 			border: none;			
 		}
-		.bt .bb{
-			text-decoration: none;
-			background-color: transparent;
-			color: white;
-			font-size: 23px;
-			margin-left: 0px;
-			border: none;			
-		}
 		#p{
 			margin-left: 8%;
 			margin-top: 3%;
@@ -59,19 +51,7 @@
 			font-size: 350%;
 			color: white
 		}
-		.bt li {
-			display: inline-block;
-			background-color: #007fff;
-			text-align: center;
-			padding: 5px;
-			color: white;
-			width: 120px;
-			font-size: 25px;
-			height: 30px;
-			border-radius: 15px;
-			margin-left: 140px;
-			transition-duration: 0.6s;
-		}
+
 
 		/*this is home buttons*/
 		/*button:hover{
@@ -85,16 +65,6 @@
 
 		}*/
 
-		.bb:hover{
-			text-align: center;
-			cursor: default;
-			background-color:#007fff;
-			width: 120px;
-			height: 35px;
-			transition-duration: 1s;
-			border-bottom: none;
-			border-radius: 100%;
-		}
 		.imgg img{
 			border: 30px solid white;
 			width: 25%;
@@ -173,8 +143,9 @@
 		
 	</div>
 	<div>
-		<ul class="bt" id="bt">
-			<li><button class="bb" id="bb" onclick="Contact()">Contact</button></li>
+		<div id="side">
+		<ul>
+			<li id="rse" onclick="rs()">Resume</li>
 		</ul>
 		<br>
 		<!--icons-->
@@ -247,22 +218,52 @@
 	</div>
 
 </div>
-	<script type="text/javascript">
+	<script type="text/javascript" id="scr">
+		var a=1;
+		function rs()
+		{
+				document.getElementById('image').style.display="inline";
+				document.getElementById('bh').style.display="inline";
+				document.getElementById('image').src="rs.png";
+				window.scrollTo(0,3300);
+
+			
+		}
 		var submitted=false;
 		function Home() {
+			document.getElementById('image').style.display="none";
+			document.getElementById('bh').style.display="none";
+
   		window.scrollTo(0,0);
+  		return a=0;
  		}
 		function About() {
-  		window.scrollTo(800,900);
+			document.getElementById('image').style.display="none";
+			document.getElementById('bh').style.display="none";
+			window.scrollTo(800,800);
+  		return a=0;
  		}
  		function Skills() {
+ 			document.getElementById('image').style.display="none";
+ 			document.getElementById('bh').style.display="none";
   		window.scrollTo(800,1700);
+  		return a=0;
  		}
  		function Contact() {
+ 			document.getElementById('image').style.display="none";
+ 			document.getElementById('bh').style.display="none";
+
   		window.scrollTo(0,4000);
+  		return a=0;
  		}
- 	
-		
+ 		function vali()
+ 		{
+ 			alert("Thank You For Contacting");
+ 			window.open('https://abdulkaleem254.github.io/abdulkalim.github.io/');
+ 			//return false;
+ 		}
+
+
 		</script>
 		<!--<iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if (submitted) {window.location='file:///E:/comparative%20religion/uirc/kaleem.html';}"></iframe><-->
 <div class="con">
@@ -279,6 +280,15 @@
 
 	</div>
 </div>	
+<div >
+	<img id="image" src="" alt="" style="display: none;">
+	
+</div>
+<div>
+	<br><br>
+	<button id="bh" onclick="Home()" >Close</button>
+	<br><br><br>
+</div>
 
 	
 	
