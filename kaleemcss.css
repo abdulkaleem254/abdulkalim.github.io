@@ -303,8 +303,20 @@ input:hover{
 				margin-left: 42%;
 		}
 		#rse{
+			border-radius: 10px;
+			padding: 5px;
+			background-color: #009fff;
+			width: 3em;
+			transition: 0.9s;
+			font-size:80%;
 			margin-left: 10%;
 		}
+	#rse:hover{
+		width: 3.3em;
+		transition: 0.6s;
+		font-size:90%;	
+		cursor: default;
+}
 
 
 }
