@@ -307,32 +307,32 @@
     <!-- form -->
     <div class="container">
         <!-- https://docs.google.com/forms/u/0/d/e/1FAIpQLSew6r1pavfyRTRkr5oQblzowH9c9HBGyhkK0UDvwSV4e5HRDQ/formResponse -->
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSew6r1pavfyRTRkr5oQblzowH9c9HBGyhkK0UDvwSV4e5HRDQ/formResponse" 
+        <form action="form.php" 
         method="post" 
         onsubmit="return validate()" class="form" id="contact" class="mb-5">
             <div class="row rlform ">
                 <div class="col-md-6 ">
                     <div class="form-floating my-3 my-md-4">
-                        <input type="text" name="entry.150544439" class="form-control" id="floatingInput" placeholder="firstname" required>
+                        <input type="text" name="Fname" class="form-control" id="floatingInput" placeholder="firstname" required>
                         <label for="floatingInput">First Name</label>
                     </div>
                 </div>
                 <div class="col-md-6 ">
                     <div class="form-floating my-3 my-md-4">
-                        <input type="text" name="entry.150544439" class="form-control" id="floatingInput" placeholder="Lastname" required>
+                        <input type="text" name="Lname" class="form-control" id="floatingInput" placeholder="Lastname" required>
                         <label for="floatingInput">Last Name</label>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="form-floating mb-3 my-md-4">
-                        <input type="email" name="entry.519229233" class="form-control w-100 w-md-50" id="floatingInput" placeholder="email"
+                        <input type="email" name="email" class="form-control w-100 w-md-50" id="floatingInput" placeholder="email"
                             required>
                         <label for="floatingInput">Email</label>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="form-floating my-3 my-md-4 mb-4">
-                        <textarea class="form-control" name="entry.899228096" placeholder="Leave a comment here" id="floatingTextarea2"
+                        <textarea class="form-control" name="comments" placeholder="Leave a comment here" id="floatingTextarea2"
                             style="height: 100px" required></textarea>
                         <label for="floatingTextarea2">Comments</label>
                     </div>
