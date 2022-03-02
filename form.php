@@ -8,15 +8,16 @@ if (!empty($_POST)) {
    $email = $_POST['email'];
    $message = $_POST['comments'];
 
-   if (empty($name)) {
-       $errors[] = 'Name is empty';
+   if (empty($Fname)) {
+       $errors[] = 'First Name is empty';
    }
+   if (empty($Lname)) {
+    $errors[] = 'Last Name is empty';
+}
 
    if (empty($email)) {
        $errors[] = 'Email is empty';
-   } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-       $errors[] = 'Email is invalid';
-   }
+   } 
 
    if (empty($message)) {
        $errors[] = 'Message is empty';
