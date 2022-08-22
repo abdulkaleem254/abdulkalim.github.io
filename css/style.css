@@ -1,0 +1,53 @@
+.navbar-nav > .nav-item{
+    padding: 0 15px;
+
+}
+.navbar-collapse>ul{
+    margin-right:0px !important
+}
+.navbar-collapse>ul>li>a{
+    font-size:20px
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.my-btn>.nav-link{
+    border: 1px solid transparent;
+    border-radius:15px ;
+}
+.ban-par{
+    background: black;
+    padding: 0;
+}
+.banner{
+    max-width: 100%;
+    background-image: url(../assets/banner.png);
+    background-size: cover;
+    height: 750px;
+    opacity: 0.8;
+    z-index: 10;
+}
+.myrow{
+    padding-top:25%;
+    margin:0px
+}
