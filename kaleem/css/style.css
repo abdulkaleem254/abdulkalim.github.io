@@ -62,7 +62,39 @@
 .card-body h4>i{
     font-size: 60px;
     color: #004e92;
+    margin-bottom:5%
+}
+.card-title{
+    color: #004e92;
+    font-weight: 700;
 }
 .card{
     border:1px solid black
+}
+.card-footer{
+    background-color: #004e92;
+    padding: 0;
+    transition: 0.6;
+}
+.card-footer a{
+    color: white;
+    border: none;
+    border-top: 1px solid black;
+    border-radius: none;
+}
+.card-footer:hover{
+    background-color: rgb(217, 217, 217);
+    color: black;
+    transition: 0.6;
+    
+}
+
+.activeprice{
+    background-color: #000428;
+    color: white;
+}
+.pricing{
+    cursor: pointer;
+    border: 1px solid black !important;
+
 }
