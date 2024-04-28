@@ -40,6 +40,15 @@ body{
     border: 1px solid transparent;
     border-radius:15px ;
 }
+
+.login{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.login>a{
+    color: black;
+}
 .ban-par{
     /* background: black; */
     padding: 0;
@@ -73,6 +82,20 @@ body{
 .abt{
     border-bottom: 5px solid white;
 }
+
+
+/* services */
+.services{
+    display: inline;
+    border-bottom: 5px solid #f7921a;
+}
+
+
+
+
+
+
+
 .card-body h4>i{
     font-size: 60px;
     color: #f7921a;
@@ -84,12 +107,16 @@ body{
 }
 .card{
     /* border:1px solid black; */
-    height: 380px;
-    box-shadow: 0px 0px 10px #f7921a;
+    height: 360px;
+    box-shadow: 0px 0px 5px #f7921a;
+}
+.service-boxes .card:hover{
+    scale: 1.1;
+    transition: 0.5s;
 }
 .card-footer{
     background-color: #f7921a;
-    box-shadow: 0px 0px 10px #f7921a;
+    box-shadow: 0px 0px 5px #f7921a;
     padding: 0;
     transition: 0.6;
 }
@@ -110,11 +137,21 @@ body{
     background-color: #f7921a;
     color: white;
 }
+
+
+/* services end */
+/* Pricing starts */
 .pricing{
     cursor: pointer;
     border: 1px solid #f7921a !important;
 
 }
+.price-heading{
+    display: inline;
+    border-bottom: 5px solid #f7921a;
+}
+
+
 
 /* pricing boxes */
 .pricing-ouput{
@@ -202,8 +239,266 @@ padding: 10px 0px;
 }
 
 
+/* bar box */
+
+.bar-box{
+    padding-top: 3%;
+}
+.bar-box h5{
+    margin-top: 5%;
+}
+.bar-box p{
+    font-size: 13px;
+}
+
+.bar-box i{
+    font-size: 35px;
+    color: #f7921a;
+    
+}
+/* bar box */
+
+.price-list{
+    justify-content: space-around;
+}
+
+.price-list .card{
+    height: 340px;
+    transition: 0.5s;
+}
+.second-price{
+    transform: scale(1.1);
+}
+
+.price-list .card-body{
+    padding: 0px;
+}
+.price-list .plan-price{
+    padding: 15%;
+}
+.price-list .plan-price>td:nth-child(1){
+    --bs-table-accent-bg: none;
+    
+}
+.price-list .plan-price>td>strong ,.carousel td>strong{
+    font-size: 45px;
+}
+
+
+.price-list .card-header{
+    background: #f7921a;
+    color: white;
+    text-align: center;
+
+}
+.price-list .card-header h2{
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+.price-list .card-header p{
+    font-size: 19px;
+    margin-bottom: 0px; 
+}
+.price-list .card-body{
+    padding: 0px;
+}
+.price-list .card-body td{
+padding: 10px 0px;
+}
+.sale-box, .sale-box.two, .sale-box.three {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    height: 130px;
+    width: 143px;
+    text-align: center;
+    z-index: 0;
+    right: 0;
+}
+
+.sale-box span.on_sale {
+    font-size: 14px;
+    color: #444;
+    background: #ffd400;
+    text-transform: uppercase;
+    padding: 18px 12px 0px 10px;
+    width: 100px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 80px;
+    top: -5px;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform: rotate(-44deg);
+    -ms-transform: rotate(-44deg);
+    transform: rotate(40deg);
+    box-shadow: 3px -4px 13px 3px rgba(0,0,0,0.75);
+}
+
+.price-list .card:hover{
+    scale: 0.9;
+    transition: 0.5s;
+}
+
+button.buynow
+{
+    background-color: #f7921a;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+button.buynow:hover{
+    background-color: #fdca8b;
+}
+
+
+/* Industries we served */
+.industries{
+    padding-top: 20px;
+    background-color: #f7921a;
+    color: white;
+}
+.industries h4{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.industry-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.industry-box>div{
+    margin: 5px 15px;
+    width: 12%;
+}
+.industry-box>div>p{
+    text-align: center;
+    font-size: 18px;
+}
+.industry-box>div>div>i{
+    font-size: 30px;
+}
+
+
+/* trusted clients */
+.row.clients{
+    margin-top: 5%;
+    padding-top: 2%;
+    background-color: #e5e5e5;
+    height: 200px;
+}
+.trusted-clients {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .client-logo-container{
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .client-logos {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .client-logos li {
+    margin-right: 1rem;
+  }
+  
+  .client-logos li:last-child {
+    margin-right: 0;
+  }
+  
+  
+/* trusted clients ends*/
+
+.modal-body>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* form */
 .form-control:focus{
     border-color: #f7921a;
     box-shadow: 0 0 0 0.5px #f0c086;
+}
+
+
+/* media */
+@media (max-width: 768px) {
+    .promotion{
+        padding: 0px;
+    }
+    .promotion>.row>div{
+        padding: 0px;
+    }
+    .pricing-output{
+        padding: 0px;
+    }
+    .price-list>div{
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .transaction{
+        padding: 0px;
+    }
+    .transaction>.row>div{
+        padding: 0px;
+    }
+    .reseller{
+        padding: 0px;
+    }
+    .reseller>.row>div{
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .price-list .card{
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .price-list .card.second-price{
+        transform: scale(1);
+    }
+    .price-list>div{
+        margin-bottom: 15px;
+    }
+    /* industry box */
+    
+    .industry-box>div{
+        width: 50%;
+        margin: 0 auto;
+    }
+    form>.row>div{
+        padding: 0px;
+    }
+    .pricing{
+        height: auto;
+    }
+    .pricing>p{
+        overflow: auto;
+    }
+    a.nav-link {
+        text-align: center;
+        margin-top: 5%;
+    }
+    .login>a{
+        background-color: #f7921a;
+        border-radius: 10px;
+        color: white;
+    }
 }
